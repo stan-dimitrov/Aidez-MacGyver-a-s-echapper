@@ -15,8 +15,8 @@ from constantes import *
 pygame.init()
 window_resolution = (450, 450)
 window_resolution1 = (450, 450)
-blank = (255, 255, 255)
-green =  (66, 244, 89)
+blank_color = (255, 255, 255)
+green_color =  (66, 244, 89)
 
 #Open the windows Pygame (square: width = height)
 window = pygame.display.set_mode((window_side, window_side))
@@ -30,10 +30,10 @@ window_surface = pygame.display.set_mode(window_resolution)
 windows_game_info = pygame.display.set_mode(window_resolution1)
 
 arial_font = pygame.font.SysFont("arial", 30)
-Jeu_MC_Gyver_intro = arial_font.render("Jeu Aidez à MacGyver à s'échapper", False, blank)
+Jeu_MC_Gyver_intro = arial_font.render("Jeu - Aidez MacGyver à s'échapper", False, blank_color)
 
 arial_font = pygame.font.SysFont("arial", 28)
-Jeu_MC_Gyver_info = arial_font.render("For start press K_F1 for leave press ESC", False, green)
+Jeu_MC_Gyver_info = arial_font.render("For start press K_F1 for leave press ESC", False, green_color)
 
 window_surface.blit(Jeu_MC_Gyver_intro, [10, 10])
 windows_game_info.blit(Jeu_MC_Gyver_info, [10, 50])
