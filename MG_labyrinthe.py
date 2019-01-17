@@ -3,7 +3,7 @@ Helped MacGyver to escape
 Game in which MacGyver must be moved to the exit through a labyrinth.
 
 Script Python
-Files : MG_labyrinthe.py, classes.py, constantes.py, n1 + images
+Files : MG_labyrinthe.py, classes.py, constantes.py, ressource(images)
 """
 
 import  pygame
@@ -105,7 +105,7 @@ while continuer:
         for event in pygame.event.get():
 
             #  If the user leaves, we put the variable that continues the game
-            #  AND the general variable to 0 to close the window
+            #  and the general variable to 0 to close the window
             if event.type == QUIT:
                 continuer_game = 0
                 continuer = 0

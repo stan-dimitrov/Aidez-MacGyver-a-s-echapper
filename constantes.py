@@ -9,7 +9,7 @@ window_side = number_sprite_side * size_sprite
 window_title = "MG_labyrinthe"
 image_icone = "ressource/MacGyver.png"
 
-#Lists of the game's images
+#Lists of the game images
 image_fond = "ressource/fond.jpg"
 image_wall = "ressource/mur.png"
 image_start = "ressource/depart.png"

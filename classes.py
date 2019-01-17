@@ -32,9 +32,9 @@ class Level:
     def show(self, window):
         """Method to display the level according to the structure list returned by generer()"""
         #Loading images (only arrival cell contains transparency)
-        wall = pygame.image.load(image_wall).convert_alpha()
-        start = pygame.image.load(image_start).convert_alpha()
-        finish = pygame.image.load(image_gardien).convert_alpha()
+        wall = pygame.image.load(image_wall).convert()
+        start = pygame.image.load(image_start).convert()
+        finish = pygame.image.load(image_gardien).convert()
         ether = pygame.image.load(image_ether).convert()
         syringe = pygame.image.load(image_syringe).convert()
         plastic = pygame.image.load(image_plastic_bottle).convert_alpha()
@@ -53,17 +53,17 @@ class Level:
                  #The actual position in pixels is calculated
                  x = num_case * size_sprite
                  y = num_line * size_sprite
-                 if sprite == 'm':       #m = Wall
+                 if sprite == 'm':       #m = wall
                     window.blit(wall, (x,y))
-                 elif sprite == 'd':     #d = Start
+                 elif sprite == 'd':     #d = start
                     window.blit(start, (x,y))
-                 elif sprite == 'a':     #a = Finish
+                 elif sprite == 'a':     #a = finish
                     window.blit(finish, (x,y))
                  elif sprite == 'e':     #d = ether
                     window.blit(ether, (x,y))
-                 elif sprite == 's':     #d = seringue
+                 elif sprite == 's':     #d = syringe
                     window.blit(syringe, (x,y))
-                 elif sprite == 'p':     #d = plastique
+                 elif sprite == 'p':     #d = plastic
                     window.blit(plastic, (x,y))
 
                  num_case += 1
